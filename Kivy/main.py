@@ -354,6 +354,7 @@ class KivyApp(App, Widget):
         self.block_list = []
         self.plus_change = 0
         self.swipe_count = ''
+        self.spisok.reverse()
 
         for num_block in range(len(self.spisok)):
                 self.block_list.append(Button(text=f'{self.spisok[num_block][0]}\n{self.spisok[num_block][1]}', 
